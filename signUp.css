@@ -33,8 +33,8 @@ form{
 	text-align: center;
 	padding: 1em 2em;
 }
-button{
-	padding: 1em 2em;
+.btn-primary{
+	padding: 0.5em 2em;
 }
 /*footer*/
 footer{
