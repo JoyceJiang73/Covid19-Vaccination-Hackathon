@@ -1,6 +1,7 @@
 /*welcome section */
 .welcome{
 	text-align: center;
+	padding: 4em 20em 0 20em;
 }
 h1{
 	font-size: 4em;
@@ -12,12 +13,13 @@ h1{
 	text-align: center;
 }
 button{
-	border: 1px solid black;
-	border-radius: 25px;
+	border: 1px solid #0275d8;
+	border-radius: 5px;
 	padding: 1em 4em;
-	color: black;
+	color: white;
 	cursor: pointer;
 	transition: 1s ease all;
+	background-color: #0275d8;
 }
 button:hover{
 	background-color: lightgray;
@@ -29,13 +31,13 @@ button:hover{
 	font-size: 0.8em;
 }
 #othersSignUpBtn{
-	color: black;
+	color: #0275d8;
 	font-weight: bold;
 	text-decoration: none;
 	transition: 1s ease all;
 }
 #othersSignUpBtn:hover{
-	text-decoration: underline;
+	color: lightgray;
 }
 /*sign in button section*/
 #userSignInBtn{

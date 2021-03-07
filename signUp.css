@@ -21,16 +21,20 @@ form{
 	font-size: 0.8em;
 }
 #exitBtn{
-	color: black;
+	color: #0275d8;
 	font-weight: bold;
 	text-decoration: none;
 	transition: 1s ease all;
 }
 #exitBtn:hover{
-	text-decoration: underline;
+	color: lightgray;
 }
 #submitBtn{
 	text-align: center;
+	padding: 1em 2em;
+}
+button{
+	padding: 1em 2em;
 }
 /*footer*/
 footer{
