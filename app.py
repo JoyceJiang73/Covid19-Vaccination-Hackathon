@@ -66,7 +66,7 @@ def nearby_center(user_location):
 
 @app.route("/")
 def index():
-    return render_template('sample.html', data=SampleData)
+    return render_template('index.html', data=SampleData)
 
 
 
@@ -80,7 +80,8 @@ def getvalue():
         update_name=requests.put(url+'user/3/User Info/Name.json', json=name_update)
         update_email=requests.put(url+'user/3/Profile Setting/Preference/Email.json', json=email_update)
         update_state=requests.put(url+'user/3/User Info/State.json', json=state_update)
-        return render_template('sample.html',data=SampleData)
+        update_password=requests.put(url+'user/3/User Info/Password.json', json=state_update)
+        return render_template('profile.html',data=SampleData)
     else:
         return render_template('signup.html')
 
@@ -93,6 +94,28 @@ def getvalue2():
         return render_template('calendar_distance.html',closest_name=closest_name,closest_address=closest_address,closest_distance=closest_distance)
     else:
         return render_template('calendar.html')
+
+name=requests.get(url+'user/3/User Info/Name.json').text.replace('"','')
+address=requests.get(url+'user/3/User Info/Address.json').text.replace('"','')
+state=requests.get(url+'user/3/User Info/State.json').text.replace('"','')
+contact=requests.get(url+'user/3/Profile Setting/Preference/Email.json').text.replace('"','')
+password=requests.get(url+'user/3/User Info/password.json').text.replace('"','')
+    
+class SampleData:
+    name = name
+    address = address
+    contact=contact
+    state=state
+    password=password
+
+@app.route("/profile")
+def index2():
+    name=requests.get(url+'user/3/User Info/Name.json').text.replace('"','')
+    address=requests.get(url+'user/3/User Info/Address.json').text.replace('"','')
+    state=requests.get(url+'user/3/User Info/State.json').text.replace('"','')
+    contact=requests.get(url+'user/3/Profile Setting/Preference/Email.json').text.replace('"','')
+    password=requests.get(url+'user/3/User Info/Password.json').text.replace('"','')
+    return render_template('profile.html', data=SampleData)
 
 if __name__=="__main__":
     app.run(debug=True)
