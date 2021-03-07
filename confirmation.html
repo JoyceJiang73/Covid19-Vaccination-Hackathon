@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="confirmation.css">
 	<title>COVID-19 Vaccine Finder</title>
 	
 	<!-- styling -->
@@ -15,12 +15,21 @@
     <form name="passdata" action="" method="post"></form>
 	<div class="Confirmation">
         <h1>Congratulations!</h1>
-        <h1>Your Confirmation # is 29184627</h1>
+        <h2>Your Confirmation # is 29184627</h2>
+    </div>
+    
+    <div class="details">
         <p>Your appointment is scheduled for date at time at provider</p>
         <p>You will be able to find this confirmation on your profile to show the day of your Vaccination</p>
     </div>
     
-    <input type="submit" value="Return To Profile">
+    <div class="profile">
+        <a href="#" id="profileBtn"><button>Return To Profile</button></a>
+    </div>
+
+    <div class="others">
+		<p>If you would like to print confirmation, click <a href="#" id="othersSignUpBtn">here</a></p>
+	</div>
     
     </form>
 </body>
