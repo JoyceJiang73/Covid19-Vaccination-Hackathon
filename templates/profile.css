@@ -1,5 +1,10 @@
 
-
+.edit{
+	text-align: right;
+}
+.edit p{
+	font-size: 2 em;
+}
 /* The switch - the box around the slider */
 .switch {
     position: relative;
