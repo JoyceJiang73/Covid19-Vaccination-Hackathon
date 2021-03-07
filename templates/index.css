@@ -1,0 +1,60 @@
+/*welcome section */
+.welcome{
+	text-align: center;
+	padding: 4em 20em 0 20em;
+}
+h1{
+	font-size: 4em;
+	margin-top: 10%;
+}
+/*sign up button section*/
+.main{
+	margin-top: 3em;
+	text-align: center;
+}
+button{
+	border: 1px solid #0275d8;
+	border-radius: 5px;
+	padding: 1em 4em;
+	color: white;
+	cursor: pointer;
+	transition: 1s ease all;
+	background-color: #0275d8;
+}
+button:hover{
+	background-color: lightgray;
+}
+.others{
+	text-align: center;
+}
+.others p{
+	font-size: 0.8em;
+}
+#othersSignUpBtn{
+	color: #0275d8;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 1s ease all;
+}
+#othersSignUpBtn:hover{
+	color: lightgray;
+}
+/*sign in button section*/
+#userSignInBtn{
+	position: fixed;
+	top: 25px;
+	right: 25px;
+}
+#userSignInBtn button{
+	padding: 1em 2em;
+}
+/*footer*/
+footer{
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: lightgray;
+	text-align: center;
+}

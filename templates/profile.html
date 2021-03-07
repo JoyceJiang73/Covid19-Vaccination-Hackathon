@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<title>COVID-19 Vaccine Finder</title>
+
+	<!-- styling -->
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+        }
+        img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<form>
+		<fieldset disabled>
+			<div class="form-row">
+				<div class="col-md-3">
+					<img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg" alt="Profile Image" style="width: 50%">
+					<h2>Name</h2>
+				</div>
+				<div class="form-group col-md-3">
+					<h1>Personal Info</h1>
+					<div class="form-group">
+						<label for="fullName">FULL NAME</label>
+						<input type="text" id="fullName" class="form-control" placeholder="John Doe">
+					</div>
+					<div class="form-group">
+						<label for="address">ADDRESS</label>
+						<input type="text" id="address" class="form-control" placeholder="497 Evergreen Rd.">
+					</div>
+					<div class="form-group">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="city">CITY</label>
+								<input type="text" id="city" class="form-control" placeholder="Roseville">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="zip">ZIP CODE</label>
+								<input type="text" id="zip" class="form-control" placeholder="95673">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="state">State</label>
+						<select id="state" class="form-control">
+							<option>Washington</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<h1>Profile Settings</h1>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								Turn on GPS tracker
+							</div>
+						<div class="col-md-6">
+							<label for="GPStracker"> 
+								<!-- Rounded toggle switch -->
+								<label class="switch">
+									<input type="checkbox">
+									<span class="slider round"></span>
+								</label> 
+							</label>
+						</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								Would you like to receive notifications?
+							</div>
+						<div class="col-md-6">
+							<label for="notifications"> 
+								<!-- Rounded toggle switch -->
+								<label class="switch">
+									<input type="checkbox">
+									<span class="slider round"></span>
+								</label> 
+							</label>
+						</div>
+						</div>
+					</div>
+					<div class="form-group notifications">
+						<div class="row">
+							<div class="col-md-6">
+								<p>Email: User@mail.com</p>
+							</div>
+							<div class="col-md-6">
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input">
+									<label class="custom-control-label"></label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Text: 206-221-3456</p>
+							</div>
+							<div class="col-md-6">
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" checked>
+									<label class="custom-control-label"></label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Call: 206-221-3456</p>
+							</div>
+							<div class="col-md-6">
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input">
+									<label class="custom-control-label"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<h1>Log-In Info</h1>
+					<div class="form-group">
+						<label for="email">EMAIL</label>
+						<input type="text" id="email" class="form-control" placeholder="John Doe">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="text" id="password" class="form-control" placeholder="497 Evergreen Rd.">
+					</div>
+				</div>
+			</div>
+		</fieldset>
+			<div class="row">
+				<div class="col-md-3">
+					<img src="http://verified-badge.vedb.me/wp-content/uploads/2020/07/Facebook-Logo-Verified-Badge-PNG.png" alt="Profile Image" style="width: 50%">
+					<p>I'm Eligible</p>
+				</div>
+				<div class="col-md">
+					<h3>Upcoming Appointments</h3>
+					<p>UW Medical Center<br>3/26/2021 10:30 am</p>
+					<a href="#"><button>Learn More</button></a>
+				</div>
+				<div class="col-md">
+					<p>Do you need to reschedule or sign up for your next appointment? You can do that here!</p>
+					<a href="#"><button>Schedule Now</button></a>
+				</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
