@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="signUp.css">
+	<title>COVID-19 Vaccine Finder</title>
+
+	<!-- styling -->
+	<style type="text/css">
+		body{
+			font-family: serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="title">
+		<h1>Create Account</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6 main">
+		<form>
+			<div class="form-group">
+				<label for="userName">Name</label>
+				<input type="text" class="form-control" id="nameInput" placeholder="eg. John Doe">
+			</div>
+			<div class="form-group">
+				<label for="userEmail">Email</label>
+				<input type="email" class="form-control" id="emailInput" placeholder="eg. name@example.com">
+			</div>
+			<div class="form-group">
+				<label for="userPassword">Password</label>
+				<input type="password" class="form-control" id="passwordInput" placeholder="eg. abcdefg">
+			</div>
+			<div class="form-group">
+				<label for="userState">State</label>
+				<input type="text" class="form-control" id="stateInput" placeholder="eg. Washington">
+			</div>
+			<div id="submitBtn">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</form>
+		</div>
+		<div class="col-md-3"></div>
+		</div>
+	</div>
+
+	<div class="exit">
+		<p>Already have an account, click <a href="#" id="exitBtn">HERE</a></p>
+	</div>
+</body>
+</html>
