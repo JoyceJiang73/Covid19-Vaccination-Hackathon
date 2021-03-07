@@ -8,7 +8,7 @@
 	<!-- styling -->
 	<style type="text/css">
 		body{
-			font-family: sans-serif;
+			font-family: serif; /*TBD: font changes;*/ 
 		}
 	</style>
 </head>
@@ -18,41 +18,422 @@
 		<p>These next questions will help us determine your eligibility. Please answer honestly so that we can serve the most vulnerable first!</p>
 	</div>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4">
-				<form>
-					<div class="form-group">
-						<label for="zipcode">Zipcode</label>
-						<input type="text" name="zipcode">
-					</div>
-					<div class="form-group">
-						<label for="age">Age</label>
-						<input type="text" name="age">
-					</div>
-					<div class="form-group">
-						<label for="workSetting">Do you work in a healthcare setting?</label>
-						<input type="text" name="workSetting">
-					</div>
-				</form>
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="zipcode" class="col-form-label-sm">Zipcode</label>
+					<input type="text" class="form-control form-control-sm" id="zipcode">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="groupSetting" class="col-form-label-sm">Do you live in a group setting?</label>
+					<input type="text" class="form-control form-control-sm" id="groupSetting">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="workLocation" class="col-form-label-sm">Do you or someone you are living with work outside the home?</label>
+					<input type="text" class="form-control form-control-sm" id="workLocation">
+				</div>
 			</div>
-			<div class="col-md-4">
-				<form>
-					<div class="form-group">
-						<label for="housingSetting">Do you live in a group setting?</label>
-						<input type="text" name="housingSetting">
-					</div>
-					<div class="form-group">
-						<label for="caretaker">Are you being cared for by someone outside of your home?</label>
-						<input type="text" name="caretaker">
-					</div>
-					<div class="form-group">
-						<label for="household">Are you over 50 living in a multigenerational household?</label>
-						<input type="text" name="household">
-					</div>
-				</form>
-				</form>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="age" class="col-form-label-sm">Age</label>
+					<input type="text" class="form-control form-control-sm" id="age">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="caretaker" class="col-form-label-sm">Are you being cared for by someone outside of your home?</label>
+					<input type="text" class="form-control form-control-sm" id="caretaker">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="reducedRisk" class="col-form-label-sm">Are you able to reduce your risk of exposure?</label>
+					<input type="text" class="form-control form-control-sm" id="reducedRisk">
+				</div>
 			</div>
-		</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="workSetting" class="col-form-label-sm">Do you work in a healthcare setting?</label>
+					<input type="text" class="form-control form-control-sm" id="workSetting">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="household" class="col-form-label-sm">Are you over 50 living in a multigenerational household?</label>
+					<input type="text" class="form-control form-control-sm" id="household">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="criticalWorker" class="col-form-label-sm">Are you considered a critical worker?</label>
+					<input type="text" class="form-control form-control-sm" id="criticalWorker">
+				</div>
+			</div>
+			<div class="col-md-12 subTitle">
+				<h2>Which of the following apply to you?</h2>
+			</div>
+			<div class="form-group" id="switches">
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have cancer</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveCancer">
+							<label class="custom-control-label" for="haveCancer"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have type 2 Diabetes</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveDiabetes">
+							<label class="custom-control-label" for="haveDiabetes"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have thalassemia</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveTB">
+							<label class="custom-control-label" for="haveTB"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have Chronic Kidney Disease</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveCKD">
+							<label class="custom-control-label" for="haveCKD"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I am a smoker</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="smoker">
+							<label class="custom-control-label" for="smoker"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have a weakened immune system</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="weakImmune">
+							<label class="custom-control-label" for="weakImmune"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have Down Syndrome</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="downSyndrome">
+							<label class="custom-control-label" for="downSyndrome"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have asthma</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveAsthma">
+							<label class="custom-control-label" for="haveAsthma"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have type 1 Diabetes</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="type1Diabetes">
+							<label class="custom-control-label" for="type1Diabetes"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have COPD</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveCOPD">
+							<label class="custom-control-label" for="haveCOPD"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have cerebrovascular disease</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveCerebrovascular">
+							<label class="custom-control-label" for="haveCerebrovascular"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have liver disease</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveLiverDisease">
+							<label class="custom-control-label" for="haveLiverDisease"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have a heart condition</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="heartCondition">
+							<label class="custom-control-label" for="heartCondition"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have cystic fibrosis</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveCystic">
+							<label class="custom-control-label" for="haveCystic"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have a BMI of 25-30</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="BMI">
+							<label class="custom-control-label" for="BMI"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I am immunocompromised from an organ transplant</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="organTransplant">
+							<label class="custom-control-label" for="organTransplant"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have pulmonary fibrosis</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="pulmonaryFibrosis">
+							<label class="custom-control-label" for="pulmonaryFibrosis"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I am pregnant</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="pregnant">
+							<label class="custom-control-label" for="pregnant"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have a BMI of 30 or more</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="highBMI">
+							<label class="custom-control-label" for="highBMI"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have hypertension or high blood pressure</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveHighBloodPressure">
+							<label class="custom-control-label" for="haveHighBloodPressure"></label>
+							
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="form-group col-md-4">
+				<div class="row">
+					<div class="col-md-6">
+						<p>I have a neurological condition, such as dementia</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="haveDementia">
+							<label class="custom-control-label" for="haveDementia"></label>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-12 subTitle">
+				<h2>Do any of these apply to your living situation?</h2>
+			</div>
+			<div class="form-group" id="livingSituation">
+				<div class="custom-control custom-switch">
+					<div class="row">
+					<div class="col-md-6">
+						<p>I am currently experiencing homelessness</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="homeless">
+							<label class="custom-control-label" for="homeless"></label>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="custom-control custom-switch">
+					<div class="row">
+					<div class="col-md-6">
+						<p>I am a resident of a group home</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="grouphome">
+							<label class="custom-control-label" for="grouphome"></label>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="custom-control custom-switch">
+					<div class="row">
+					<div class="col-md-6">
+						<p>I currently reside in a corrections facility, prison, jail or detention center</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="correctionsFacility">
+							<label class="custom-control-label" for="correctionsFacility"></label>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="custom-control custom-switch">
+					<div class="row">
+					<div class="col-md-6">
+						<p>I have a disability that keeps me from adopting protective measures</p>
+					</div>
+					<div class="col-md-6">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="disability">
+							<label class="custom-control-label" for="disability"></label>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div id="submitBtn">
+				<button type="submit" value="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</form>
 		
 	</div>
 </body>
