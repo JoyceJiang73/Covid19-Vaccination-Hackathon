@@ -1,0 +1,44 @@
+/*welcome section */
+#intro{
+	text-align: center;
+	width: 50%;
+}
+h1{
+	font-size: 2em;
+	margin-top: 2%;
+}
+/*form*/
+form{
+	padding: 2em 4em;
+}
+.subTitle{
+	text-align: center;
+}
+.subTitle h2{
+	font-size: 1.5em;
+	padding: 2em;
+}
+#switches{
+	text-align: center;
+}
+.col-md-6 p{
+	text-align: left;
+	padding-left: 2em;
+}
+.col-md-6 .custom-switch{
+	text-align: right;
+	padding-right: 1em;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#livingSituation{
+	padding: 0 10em;
+}
+#submitBtn{
+	text-align: center;
+}
