@@ -1,20 +1,4 @@
-/*profile section */
-.column1 {
-    float: left;
-    width: 25%;
-  }
 
-.column2 {
-     float: left;
-    width: 33.3%;
-}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 /* The switch - the box around the slider */
 .switch {
@@ -77,4 +61,9 @@
   
   .slider.round:before {
     border-radius: 50%;
+  }
+  /*body container*/
+  .container-fluid{
+    padding: 2em;
+    text-align: center;
   }
