@@ -1,0 +1,58 @@
+/*welcome section */
+.welcome{
+	text-align: center;
+}
+h1{
+	font-size: 4em;
+	margin-top: 10%;
+}
+/*sign up button section*/
+.main{
+	margin-top: 3em;
+	text-align: center;
+}
+button{
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 1em 4em;
+	color: black;
+	cursor: pointer;
+	transition: 1s ease all;
+}
+button:hover{
+	background-color: lightgray;
+}
+.others{
+	text-align: center;
+}
+.others p{
+	font-size: 0.8em;
+}
+#othersSignUpBtn{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 1s ease all;
+}
+#othersSignUpBtn:hover{
+	text-decoration: underline;
+}
+/*sign in button section*/
+#userSignInBtn{
+	position: fixed;
+	top: 25px;
+	right: 25px;
+}
+#userSignInBtn button{
+	padding: 1em 2em;
+}
+/*footer*/
+footer{
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: lightgray;
+	text-align: center;
+}
